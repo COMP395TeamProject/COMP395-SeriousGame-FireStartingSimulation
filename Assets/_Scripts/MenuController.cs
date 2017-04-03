@@ -2,27 +2,55 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour 
 {
-	//PUBLIC INSTANCE VARIABLES
-	public Text txtBegin;
-	public Text txtInfo;
-	public Text txtExit;
+	//Public Instances
+	//NOTE: These instances refers to the "txt" counterpart compoenents due to me adding the button component on the "txt"s
+	public Button btnStart;
+	public Button btnInfo;
+	public Button btnMenu;
+	public Button btnExit;
+	//public Button btnReset;
 
-	// Use this for initialization
-	void Start () 
+	//Initialization
+	public void Start()
 	{
-		
+		//Initializing instance varaibles to corresponding components
+		//btnBegin = btnBegin.GetComponent<Button>();
+		//btnInfo = btnInfo.GetComponent<Button>();
+		//btnExit = btnExit.GetComponent<Button>();
 	}
-	
-	// Update is called once per frame
-	void Update () 
+
+	//Public Methods
+	//begins simulation by changing to "MainScene"
+	public void BeginSimulation()
 	{
-
-
+		SceneManager.LoadScene ("MainScene");
 	}
 
-	//PUBLIC METHODS
+//	//Change scene to "InfoScene"
+//	public void ChangeToOverviewScene()
+//	{
+//		SceneManager.LoadScene ("InfoScene");
+//	}
 
+	//Change scene to "MenuScene"
+	public void BackToMenuScene()
+	{
+		SceneManager.LoadScene ("MenuScene");
+	}
+
+	//Quites Game
+	public void Reset()
+	{
+		SceneManager.LoadScene ("MainScene");
+	}
+
+	//Quites Game
+	public void Exit()
+	{
+		Application.Quit();
+	}
 }
