@@ -86,6 +86,7 @@
      <Compile Include="Assets\AssetStore\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
      <Compile Include="Assets\AssetStore\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\AssetStore\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+     <Compile Include="Assets\SceneTransition.cs" />
      <Compile Include="Assets\_Scripts\CameraMouseLook.cs" />
      <Compile Include="Assets\_Scripts\CameraMouseLookController.cs" />
      <Compile Include="Assets\_Scripts\CharacterController.cs" />

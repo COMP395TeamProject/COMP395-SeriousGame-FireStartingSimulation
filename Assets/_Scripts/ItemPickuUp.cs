@@ -17,26 +17,26 @@ public class ItemPickuUp : MonoBehaviour
 	//Methods
 	void Collect()
 	{
-				if (Input.GetMouseButtonUp (1)) 
+		if (Input.GetMouseButtonUp (1))
+		{
+			RaycastHit hit; //
+			//
+			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+	
+			//Nested - 
+			if (Physics.Raycast (ray, out hit, distanceToitem)) 
+			{
+				//Nested nested - 
+				if(hit.collider.gameObject.name == "pickupItem")
 				{
-					RaycastHit hit; //
-					//
-					Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-		
-					//Nested - 
-					if (Physics.Raycast (ray, out hit, distanceToitem)) 
-					{
-						//Nested nested - 
-						if(hit.collider.gameObject.name == "pickupItem")
-						{
-							SceneManager.LoadScene ("BuildingScene");
-							//Debugging
-//							Debug.Log("Item has been hit");
-//							Destroy (hit.collider.gameObject); //destroys the "item"
-						}
-					}
-		
+					//Debugging
+					Debug.Log("Item has been hit");
+					Destroy (hit.collider.gameObject); //destroys the "item"
+
 				}
+			}
+	
+		}
 	}
 
 //	void ChangeToBuildingScene()
