@@ -1,9 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\CameraMouseLook.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\UICanvasController.cs">
     <Files>
-      <File FileName="Assets\_Scripts\PlayerController.cs" Line="37" Column="2" />
-      <File FileName="Assets\_Scripts\CameraMouseLook.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\UICanvasController.cs" Line="29" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
