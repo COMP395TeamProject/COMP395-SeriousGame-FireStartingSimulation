@@ -10,7 +10,7 @@ public class ItemPickUpController : MonoBehaviour
 	public int distanceToitem;
     public int logCounter;
     public int rockCounter;
-    public bool hasFlint;
+    //public bool has;
 
 	// Use this for initialization
 	void Start () 
@@ -18,12 +18,12 @@ public class ItemPickUpController : MonoBehaviour
         // Find objects
         logCounter = GameObject.Find("GameController").GetComponent<TransitioningScene>().logCounter;
         rockCounter = GameObject.Find("GameController").GetComponent<TransitioningScene>().rockCounter;
-        //hasFlint = GameObject.Find("Gamecontroller").GetComponent<TransitioningScene>().hasFlint;
+        //has = GameObject.Find("Gamecontroller").GetComponent<TransitioningScene>().has;
 
         //Setting values
         logCounter = 0;
 		rockCounter = 0;
-		//hasFlint = false;
+		//has = false;
 	}
 	
 	// Update is called once per frame
@@ -44,7 +44,6 @@ public class ItemPickUpController : MonoBehaviour
 			//Nested - 
 			if (Physics.Raycast (ray, out hit, distanceToitem)) 
 			{
-				//Nested nested - log
 				if(hit.collider.gameObject.tag == "log")
 				{
 					
@@ -53,7 +52,7 @@ public class ItemPickUpController : MonoBehaviour
 					Destroy (hit.collider.gameObject); //destroys the object named "item"
 					logCounter += 1;
 				}
-				//Nested nested - 
+
 				if(hit.collider.gameObject.tag == "rock")
 				{
 
@@ -62,16 +61,17 @@ public class ItemPickUpController : MonoBehaviour
 					Destroy (hit.collider.gameObject); //destroys the object named "item"
 					rockCounter += 1;
 				}
-				//Nested nested - 
-				if(hit.collider.gameObject.tag == "flint")
-				{
 
-					//Debugging
-					Debug.Log("Item has been hit");
-					Destroy (hit.collider.gameObject); //destroys the object named "item"
-					hasFlint = true;
-				}
-                //Change to next scene
+//				if(hit.collider.gameObject.tag == "")
+//				{
+//
+//					//Debugging
+//					Debug.Log("Item has been hit");
+//					Destroy (hit.collider.gameObject); //destroys the object named "item"
+//					has = true;
+//				}
+
+                //Change to "BuildingScene"
                 if (logCounter >= 3 && rockCounter > 0)
                 {
                     SceneManager.LoadScene("BuildingScene");

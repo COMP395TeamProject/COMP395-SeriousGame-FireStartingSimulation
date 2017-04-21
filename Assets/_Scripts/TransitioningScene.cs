@@ -8,17 +8,18 @@ public class TransitioningScene : MonoBehaviour
 	//Public Instance
 	public int logCounter;
 	public int rockCounter;
-	public bool hasFlint;
+	//public bool hasFlint;
 
 	// Use this for initialization
 	void Start () 
 	{
-		DontDestroyOnLoad (transform.gameObject);
+		//Game Objects including "logs" and "rocks" will "put" into a collection in between "MainScene" and "BuildingScene"
+		DontDestroyOnLoad (transform.gameObject); 
+		//INCLUDE THE "txt_timer" FROM "MainScene" TO "BuildingScene" IN HERE!
 	}
 
-	// Update is called once per frame
-	void Update () 
-	{
-
-	}
+//	// Update is called once per frame
+//	void Update () 
+//	{
+//	}
 }

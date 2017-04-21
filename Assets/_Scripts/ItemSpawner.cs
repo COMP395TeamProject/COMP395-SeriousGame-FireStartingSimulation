@@ -7,23 +7,23 @@ public class ItemSpawner : MonoBehaviour
 	//Public Instance
 	public GameObject log;
 	public GameObject rock;
-	public GameObject flint;
+	//public GameObject flint;
 	public int logCounter;
 	public int rockCounter;
-	public bool hasFlint;
+	//public bool hasFlint;
 
     // Use this for initialization
     void Start () 
 	{
 		logCounter = GameObject.Find("GameController").GetComponent<TransitioningScene>().logCounter;
 		rockCounter = GameObject.Find("GameController").GetComponent<TransitioningScene>().rockCounter;
-		hasFlint = GameObject.Find("GameController").GetComponent<TransitioningScene>().hasFlint;
+		//hasFlint = GameObject.Find("GameController").GetComponent<TransitioningScene>().hasFlint;
 	}
 	
-	// Update is called once per frame
-	void Update () 
-	{
-    }
+//	// Update is called once per frame
+//	void Update () 
+//	{
+//    }
 
 	//Public Methods
 	public void spawnLog()
@@ -31,12 +31,10 @@ public class ItemSpawner : MonoBehaviour
         //
         if (logCounter > 0) 
 		{
-			//Instantiating Objects
+			//Instantiating Log(s)
 			Instantiate (log, GameObject.Find("ItemSpawner").transform.position, Quaternion.identity);
 			//
 			logCounter -= 1;
-
-            
         }
 	}
 
@@ -44,17 +42,14 @@ public class ItemSpawner : MonoBehaviour
 	{
         if (rockCounter > 0)
         {
-            //Instantiating Objects
+			//Instantiating Rock(s)
             Instantiate(rock, GameObject.Find("ItemSpawner").transform.position, Quaternion.identity);
             //
             rockCounter -= 1;
-
         }
     }
 
-	public void spawnFlint()
-	{
-
-	}
-
+//	public void spawnFlint()
+//	{
+//	}
 }

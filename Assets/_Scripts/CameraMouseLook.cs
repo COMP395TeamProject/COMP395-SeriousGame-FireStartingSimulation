@@ -37,6 +37,5 @@ public class CameraMouseLook : MonoBehaviour
 		transform.localRotation = Quaternion.AngleAxis(-_mouseLook.y, Vector3.right);
 		//Making the actual character move rather than just the camera
 		_character.transform.localRotation = Quaternion.AngleAxis (_mouseLook.x, _character.transform.up);
-
 	}
 }

@@ -88,15 +88,14 @@
      <Compile Include="Assets\AssetStore\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
      <Compile Include="Assets\SceneTransitioning.cs" />
      <Compile Include="Assets\_Scripts\CameraMouseLook.cs" />
-     <Compile Include="Assets\_Scripts\CameraMouseLookController.cs" />
      <Compile Include="Assets\_Scripts\CharacterController.cs" />
+     <Compile Include="Assets\_Scripts\FinalCountdownController.cs" />
      <Compile Include="Assets\_Scripts\GameController.cs" />
      <Compile Include="Assets\_Scripts\ItemLock.cs" />
      <Compile Include="Assets\_Scripts\ItemPickUpController.cs" />
      <Compile Include="Assets\_Scripts\ItemSpawner.cs" />
      <Compile Include="Assets\_Scripts\MouseDrag.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
-     <Compile Include="Assets\_Scripts\TimeCountDownController.cs" />
      <Compile Include="Assets\_Scripts\TransitioningScene.cs" />
      <Compile Include="Assets\_Scripts\UICanvasController.cs" />
      <Compile Include="Assets\_Scripts\dropInPlace.cs" />
