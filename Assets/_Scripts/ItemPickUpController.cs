@@ -72,7 +72,7 @@ public class ItemPickUpController : MonoBehaviour
 					hasFlint = true;
 				}
                 //Change to next scene
-                if (logCounter > 0 && rockCounter > 0)
+                if (logCounter >= 3 && rockCounter > 0)
                 {
                     SceneManager.LoadScene("BuildingScene");
                 }

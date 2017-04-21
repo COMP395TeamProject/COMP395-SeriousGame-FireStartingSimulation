@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemLock : MonoBehaviour {
+public class ItemLock : MonoBehaviour 
+{
     public float xRotate1;
     public float yRotate1;
     public float zRotate1;
@@ -27,7 +28,8 @@ public class ItemLock : MonoBehaviour {
     public float yPos3;
     public float zPos3;
     // Use this for initialization
-    void Start () {
+    void Start () 
+	{
         xRotate1 = 50;
         yRotate1 = -88;
         zRotate1 = -700;
@@ -54,7 +56,8 @@ public class ItemLock : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
         GameObject.Find("Log(Clone)").GetComponent<dropInPlace>().xRotate = xRotate1;
         GameObject.Find("Log(Clone)").GetComponent<dropInPlace>().yRotate = yRotate1;
         GameObject.Find("Log(Clone)").GetComponent<dropInPlace>().zRotate = zRotate1;
