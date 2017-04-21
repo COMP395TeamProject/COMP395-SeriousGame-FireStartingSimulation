@@ -12,20 +12,21 @@ public class UICanvasController : MonoBehaviour
 	public Button btnInfo;
 	public Button btnMenu;
 	public Button btnExit;
-	//public Button btnReset;
+    
+    //public Button btnReset;
 
-//	//Initialization
-//	public void Start()
-//	{
-//		Initializing instance varaibles to corresponding components
-//		btnBegin = btnBegin.GetComponent<Button>();
-//		btnInfo = btnInfo.GetComponent<Button>();
-//		btnExit = btnExit.GetComponent<Button>();
-//	}
+    //	//Initialization
+    //	public void Start()
+    //	{
+    //		Initializing instance varaibles to corresponding components
+    //		btnBegin = btnBegin.GetComponent<Button>();
+    //		btnInfo = btnInfo.GetComponent<Button>();
+    //		btnExit = btnExit.GetComponent<Button>();
+    //	}
 
-	//Public Methods
-	//begins simulation by changing to "MainScene"
-	public void StartMainScene()
+    //Public Methods
+    //begins simulation by changing to "MainScene"
+    public void StartMainScene()
 	{
 		SceneManager.LoadScene ("MainScene");
 	}

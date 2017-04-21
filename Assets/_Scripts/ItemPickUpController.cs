@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ItemPickUpController : MonoBehaviour 
 {
@@ -70,6 +71,11 @@ public class ItemPickUpController : MonoBehaviour
 					Destroy (hit.collider.gameObject); //destroys the object named "item"
 					hasFlint = true;
 				}
+                //Change to next scene
+                if (logCounter > 0 && rockCounter > 0)
+                {
+                    SceneManager.LoadScene("BuildingScene");
+                }
 			}
 		}
 	}

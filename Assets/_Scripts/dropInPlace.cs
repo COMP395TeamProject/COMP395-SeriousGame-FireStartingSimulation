@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class dropInPlace : MonoBehaviour {
 
-    public GameObject log;
+    public GameObject item;
     public float xRotate, yRotate, zRotate;
     public float xPos, yPos, zPos;
     public bool locked = false;

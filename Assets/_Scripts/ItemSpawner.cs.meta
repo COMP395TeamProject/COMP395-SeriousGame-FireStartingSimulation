@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: dfd9a20371bb4cd4b979be3974bf9ad7
-timeCreated: 1492635304
+timeCreated: 1492701151
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - log: {fileID: 1147687398100012, guid: 4b29ec174a5f5bd4ba2dcb7bf9d4ddce, type: 2}
+  - rock: {instanceID: 0}
+  - flint: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
