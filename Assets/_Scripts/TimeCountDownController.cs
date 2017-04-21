@@ -5,19 +5,39 @@ using UnityEngine.UI;
 
 public class TimeCountDownController : MonoBehaviour 
 {
-	//Public Instance Variables
-	public Text text;
-
-	//Private Instance Variables
-	private float _timeLeft = 300.0f;
+	float timeRemaining = 5;
 
 	void Update()
 	{
-		_timeLeft -= Time.deltaTime;
-		text.text = "Time Left:" + Mathf.Round(_timeLeft); //
-		if(_timeLeft < 0)
+		timeRemaining -= Time.deltaTime;
+
+	}
+
+	void OnGUI()
+	{
+		if (timeRemaining > 0) 
 		{
-			Application.LoadLevel("GameOver");
+			GUI.Label (new Rect (100, 100, 200, 100), "Timer: " + timeRemaining);
+		} 
+		else
+		{
+			GUI.Label(new Rect(100, 100, 200, 100), "Game Over");
 		}
 	}
 }
+//	//Public Instance Variables
+//	public Text txtTime;
+//
+//	//Private Instance Variables
+//	private float _timeLeft = 300.0f;
+//
+//	void Update()
+//	{
+//		_timeLeft -= Time.deltaTime;
+//		txtTime.text = "Time Left:" + Mathf.Round(_timeLeft); //
+//		if(_timeLeft < 0)
+//		{
+//			Application.LoadLevel("GameOver");
+//		}
+//	}
+//}
