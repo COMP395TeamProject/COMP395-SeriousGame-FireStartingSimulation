@@ -1,13 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemSpawner : MonoBehaviour 
 {
-	//Public Instance
+	//PUBLIC INSTANCES
 	public GameObject log;
 	public GameObject rock;
 	//public GameObject flint;
+
+//	public Button logSpawn;
+//	public Button rockSpawn;
+//	public Button useFlint;
+
 	public int logCounter;
 	public int rockCounter;
 	//public bool hasFlint;

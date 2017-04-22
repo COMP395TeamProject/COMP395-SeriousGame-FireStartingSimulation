@@ -10,7 +10,7 @@ public class FinalCountdownController : MonoBehaviour
 	public Text txtFinalCountdown;
 
 	//Private Instance Variables
-	private float _timeStart = 5.0f; //starts at 5 minutes
+	private float _timeStart = 300.0f; //starts at 5 minutes
 
 	void Update()
 	{

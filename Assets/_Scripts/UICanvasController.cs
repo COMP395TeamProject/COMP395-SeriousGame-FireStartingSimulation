@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class UICanvasController : MonoBehaviour 
 {
-	//Public Instances
+	//Public Instances 
 	//NOTE: These instances refers to the "txt" counterpart compoenents due to me adding the button component on the "txt"s
 	public Button btnStart;
 	public Button btnInfo;

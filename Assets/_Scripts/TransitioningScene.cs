@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TransitioningScene : MonoBehaviour 
 {
@@ -9,6 +10,7 @@ public class TransitioningScene : MonoBehaviour
 	public int logCounter;
 	public int rockCounter;
 	//public bool hasFlint;
+	public Text finalCountDown; //doesn't work...
 
 	// Use this for initialization
 	void Start () 
